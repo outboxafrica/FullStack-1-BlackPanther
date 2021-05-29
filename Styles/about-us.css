@@ -57,7 +57,7 @@ header {
     align-items: center;
 }
 .logo-item {
-    width: 10rem;
+    display: none;
 }
 .menu {   
     display: flex;
@@ -92,24 +92,44 @@ header {
     margin: 0;
     padding: 0;
 }
+.about-us-title {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    background: #EFE3F5;
+    width: 100%;
+}
+.about-us-card h2 {
+    text-align: justify;
+    font-size: 1.75rem;
+}
 .about-us-cards {
     display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: space-between; 
 }
+.mobile-logo-item {
+    width: 100%;
+}
 .about-us-card {
-    padding: 0.4rem;
+    padding: 1rem;
     margin: 0.4rem;    
     background: #EFE3F5;
     border-radius: 5px;
 }
-.profile-para {
-    text-align: justify;
-}
 .about-us-card img {
     width: 100%;
     height: 15rem;
+    border-radius: 5px;
+}
+.about-us-card h3 {
+    text-align: center;
+    font-size: 1.45rem;
+}
+.about-us-card p {
+    text-align: justify;
+    font-size: 1.3rem;
 }
 /* Mobile team logos */
 #team-profile {
@@ -117,11 +137,14 @@ header {
     margin: 0;
     padding: 0;
 }
-#team_profile-text {
+.team_profile-title {
     padding: 1rem;
-}
-.profile-title {
     text-align: center;
+    font-size: 1.45rem;
+}
+.team_profile-title h3 {
+    color: #7745b7;
+    font-size: 1.2rem;
 }
 .team_profile-logos {
     display: flex;
@@ -144,9 +167,11 @@ header {
 }
 .sponsors-title {
     text-align: center;
+    font-size: 1.45rem;
 }
 .sponsors-title h3 {
     color: #fff;
+    font-size: 1.2rem;
 }
 .sponsors-logos {
     display: flex;
@@ -170,7 +195,7 @@ header {
     font-size: smaller;
     font-weight: bolder;
     text-align: center;
-    color: #E1BDF5;
+    color: #fff;
 }
 /* Mobile Footer */
 #footer {
@@ -196,39 +221,36 @@ header {
         justify-content: space-between;
         height: 5rem;
     }
-    .logo-item {}
-    nav {
-        padding-right: 5rem;
+    .logo-item {
+        display: flex;
+        width: 12rem;
+        height: 7rem;
+        padding-bottom: 1.25rem;
+    }
+    .mobile-logo-item {
+        display: none;
     }
     .menu {
-        justify-content: center;
+        flex-wrap: nowrap;
+        background: none;
     }
     .logo {
-        flex: 1;
+        order: 0;
     }
-    .item.button {
-        width: auto;
-        order: 3;
+    .item {
+        order: 1;
+        position: relative;
         display: block;
+        width: auto;
     }
-    .toggle{
-        flex: 1;
-        text-align: right;
+    .button {
         order: 2;
     }
-    /* Button up from tablet screen */
-    .menu li.button a {
-        padding: 10px 15px;
-        margin: 5px 0;
+    .button a:hover{
+    font-size: large;
     }
-    .button a {
-        font-weight: bolder;
-        color: #eaeaea;
-        background: #7745B7;
-        border-radius: 5px;
-    }
-    .button a:hover {
-        text-decoration: none;
+    .toggle {
+        display: none;
     }
     /* Tablet about-us cards */
     .about-us-cards {
@@ -238,9 +260,21 @@ header {
     }
     .about-us-card {
         flex: 0 1 calc(50% - 1em);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .about-us-card h2 {
+        text-align: left;
+        font-size: 1.625rem;
     }
     .about-us-card img {
         /* width: 100%; */
+    }
+    .about-us-card p {
+        text-align: justify;
+        font-size: 1.3rem;
     }
     /* Tablet profile logos */
     .team_profile-logos {
@@ -257,9 +291,6 @@ header {
     }
     .profile-logo:hover img {
         transform: scale(1.2);
-    }
-    .profile-para {
-        text-align: justify;
     }
     /* Tablet sponsors logos */
     .sponsors-logo {
@@ -282,8 +313,9 @@ header {
         color: #eaeaea;
     }
 }
-/* Desktop Menu */
+
 @media screen and (min-width: 60em) {
+    /* Desktop Menu */
     header {
         display: flex;
         justify-content: space-between;
@@ -315,28 +347,33 @@ header {
         display: none;
     }
     /* Desktop about-us cards */
-    #about-us {
-        padding: 1rem;
-    }
     .about-us-cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 0;
+        justify-content: space-around;        
+    }
+    .about-us-title {
+        background: #BD6FE9;
+        margin-top: 0;
     }
     .about-us-card {
-        flex: 0 1 calc(20% - 1em);
-        background: none;
-        margin: auto;
+        background: #EFE3F5;
+        flex: 0 1 calc(50% - 6em);
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
     .about-us-card img {
         width: 100%;
         border-radius: 5px;
     }
-    .about-us-card h3,p {
+    .about-us-card h3 {
         text-align: center;
+        font-size: 2rem;
     }
-
+    .about-us-card p {
+        text-align: justify;
+        font-size: 1.2rem;
+    }
     /* Desktop profile logos */
     .team_profile-logos {
         display: flex;
@@ -344,7 +381,44 @@ header {
         padding: 1rem;
     }
     .profile-logo {
-        flex: 0 1 calc(30% - 1em);
+        flex: 0 1 calc(30% - 3em);
+        padding: 0.4rem;
+    }
+}
+/* 4K Screens */
+@media screen and (min-width: 160em) {
+    /* 4K Menu */
+    header {
+        display: flex;
+        justify-content: center;
+        height: 5rem;
+    }
+    /*  4K about-us cards */
+    .about-us-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;        
+    }
+    .about-us-title {
+        background: #BD6FE9;
+        margin-top: 0;
+    }
+    .about-us-card {
+        background: #EFE3F5;
+        flex: 0 1 calc(25% - 5em);
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .about-us-card h2 {
+        text-align: center;
+    }
+    .about-us-card p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    /* 4K profile logos */
+    .profile-logo {
+        flex: 0 1 calc(25% - 3em);
         padding: 0.4rem;
     }
 }
