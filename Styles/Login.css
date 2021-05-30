@@ -80,7 +80,7 @@ img{
     border-color: #2ecc71;
 
 }
-.input-field.error {
+.error {
     border-color: #e74c3c;
 
 }
@@ -101,4 +101,8 @@ img{
 }
 #register{
     left: 400px;
+}
+
+.error-message{
+    display:none;
 }

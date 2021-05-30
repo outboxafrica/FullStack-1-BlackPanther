@@ -6,39 +6,59 @@ let username = document.getElementById('username');
 let password = document.getElementById('password');
 let email = document.getElementById('email');
 let password2 = document.getElementById('password2');
+let submitButton = document.querySelector('#button');
+let errorElements = document.querySelectorAll('.error-message'); 
 
 
+// /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+// /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
-
-username.addEventListener('textInput', username_Verify);
-email.addEventListener('textInput', email_Verify);
+username.addEventListener('input', username_Verify);
+email.addEventListener('input', email_Verify);
+let emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
 function validated(){
-    if(username.value.length < 9){
-       username.className = 'input-field error';
+    if(username.value.length < 5){
+       username.classList.add('error');
        username.focus();
-       return false;
     }
-     if(email.value.length < 6){
-       email.className = 'input-field error';
+
+    if(emailRegex.test(email.value)){
+       email.classList.add('error');
        email.focus();
-       return false;
+    }
+
+    if(username.value.length >= 5 && emailRegex.test(email.value)){
+        window.location.assign('https://freecodecamp.org/');
     }
 }
+
 function username_Verify(){
-    if(username.value.length >=8 ){
-        username.className = 'input-field success';
+    if(username.value.length >=5 ){
+        username.classList.add('success');
         username.focus();
-        return true;
+        errorElements[0].style.display = 'none';
+    }else{
+        username.classList.remove('success');
+        username.classList.add('error');
+        errorElements[0].style.display = 'block';
+        errorElements[0].innerText = 'should be 5 or more characters'
     }
+
+    
+    
 }
 function email_Verify(){
-    if(email.value.length >= 8){
-        email.className = 'input-field success';
+    if(emailRegex.test(email.value)){
+        email.classList.add('success');
         email.focus();
-        return true;
+    }else{
+        email.classList.remove('success');
+        email.classList.add('error');
     }
 }
+
+submitButton.addEventListener('click',validated);
 
 // register1.addEventListener('submit', (e) =>{
 //     e.preventDefault();
