@@ -15,6 +15,8 @@ let errorElements = document.querySelectorAll('.error-message');
 
 username.addEventListener('input', username_Verify);
 email.addEventListener('input', email_Verify);
+password.addEventListener('input', password_Verify);
+password2.addEventListener('input', password2_Verify);
 let emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
 function validated(){
@@ -28,7 +30,16 @@ function validated(){
        email.focus();
     }
 
-    if(username.value.length >= 5 && emailRegex.test(email.value)){
+
+    if(password.value.length < 5){
+        password.classList.add('error');
+        password.focus();
+     }
+     if(password.value !== password2.value){
+        password2.classList.add('error');
+        password2.focus();
+     }
+         if(password.value == password2.value && emailRegex.test(email.value)){
         window.location.assign('https://freecodecamp.org/');
     }
 }
@@ -42,7 +53,7 @@ function username_Verify(){
         username.classList.remove('success');
         username.classList.add('error');
         errorElements[0].style.display = 'block';
-        errorElements[0].innerText = 'should be 5 or more characters'
+        errorElements[0].innerText = 'username should be 5 or more characters'
     }
 
     
@@ -52,10 +63,46 @@ function email_Verify(){
     if(emailRegex.test(email.value)){
         email.classList.add('success');
         email.focus();
+        errorElements[1].style.display = 'none';
     }else{
         email.classList.remove('success');
         email.classList.add('error');
+        errorElements[1].style.display = 'block';
+        errorElements[1].innerText = 'include an "@"  eg. example@gmail.com'
     }
+}
+
+function password_Verify(){
+    if(password.value.length >=7 ){
+        password.classList.add('success');
+        password.focus();
+        errorElements[2].style.display = 'none';
+    }else{
+        password.classList.remove('success');
+        password.classList.add('error');
+        errorElements[2].style.display = 'block';
+        errorElements[2].innerText = 'password should be 7 or more characters'
+    }
+
+    
+    
+}
+function password2_Verify(){
+    if(password.value == password2.value){
+        password2.classList.add('success');
+        password2.focus();
+        errorElements[3].style.display = 'none';
+    }
+    
+    else{
+        password2.classList.remove('success');
+        password2.classList.add('error');
+        errorElements[3].style.display = 'block';
+        errorElements[3].innerText = 'password does not match'
+    }
+
+    
+    
 }
 
 submitButton.addEventListener('click',validated);
