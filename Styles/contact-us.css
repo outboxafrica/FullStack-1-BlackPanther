@@ -1,12 +1,16 @@
 *{
     margin: 0;
 }
-
+.container{
+    background-color: #E1BDF5;
+}
 .contact_container{
     display: flex;
     justify-content: space-around;
-    background-color: #E1BDF5;
+    align-items: center;
+ 
     font-family: sans-serif;
+    height: 100vh;
     
 }
 h1{
@@ -14,7 +18,9 @@ h1{
     padding-top: 1.4rem;
 
 }
-
+#send_message{
+    padding-top: 0.7rem;
+}
 input{
     margin-top:1rem ;
     padding: 0.5rem 1rem ;
@@ -59,14 +65,14 @@ img{
 span{
     margin-right: 0.6rem;
 } 
-footer{
+/* footer{
     font-family: sans-serif;
     background-color:#7745B7;
     color: #ffff;
     text-align: center;
     font-weight: 800;
     padding: 0.2rem;
-}
+} */
 
 /* media Query */
 @media only screen and (max-width: 600px){
