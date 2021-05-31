@@ -98,6 +98,7 @@ header {
     font-size: 2rem;
     background: #EFE3F5;
     width: 100%;
+    padding: 1rem;
 }
 .about-us-card h2 {
     text-align: justify;
@@ -195,22 +196,23 @@ header {
     font-size: smaller;
     font-weight: bolder;
     text-align: center;
-    color: #fff;
+    color: #000;
+    padding: 0.5rem;
 }
 /* Mobile Footer */
-#footer {
+.footer {
     position:relative;
     bottom:0;
     width:100%;
     background-color: #7745b7;
 }
-#footer p {
-    font-size: smaller;
+.footer p {
+    font-size: large;
     font-weight: bolder;
     text-align: center;
     color: #eaeaea;
 }
-#footer p a{
+.footer p a{
     text-decoration: none;
     color: #eaeaea;
 }

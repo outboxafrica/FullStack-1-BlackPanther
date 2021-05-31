@@ -46,6 +46,9 @@ a {
 .nav-link:hover{
     color: #482ff7;
 }
+.logo {
+    display:none;
+ }
 /* navbar media query */
 @media only screen and (min-width: 40rem) {
     .navbar {
@@ -61,6 +64,7 @@ a {
         font-weight: 400;
         color: #BD6FE9;
     }
+<<<<<<< HEAD
     .nav-menu{
         margin-left: 3rem;
     }
@@ -68,6 +72,12 @@ a {
 
         margin-right: 6rem;
     }
+=======
+    .logo {
+        display:flex;
+        width: 4rem;
+     }
+>>>>>>> 3008b0533c69137da86bc4e12f80e1a00f4fc61a
 }
 @media only screen and (min-width: 60rem) {
     .navbar {
@@ -82,6 +92,7 @@ a {
         font-weight: 400;
         color: #BD6FE9;
     }
+<<<<<<< HEAD
     .nav-menu{
         margin-left: 7rem;
     }
@@ -89,6 +100,12 @@ a {
 
         margin-right: 9rem;
     }
+=======
+    .logo {
+        display:flex;
+        width: 13rem;
+     }
+>>>>>>> 3008b0533c69137da86bc4e12f80e1a00f4fc61a
 }
 /* SERVICES CONTAINER */
 .services_container{
@@ -243,9 +260,10 @@ transition: 100ms ease;
     margin-bottom:0;
     width:100%;
     background-color: #482ff7;
+    padding: 0.5rem;
 }
 .footer p {
-    font-size: smaller;
+    font-size: large;
     font-weight: bolder;
     color: #fff;
     padding: 0;
