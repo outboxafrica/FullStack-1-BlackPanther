@@ -98,19 +98,19 @@ h3 {
     display: none;
 }
 /* Mobile Footer */
-#footer {
+.footer {
     /* position:absolute; */
     bottom:0;
     width:100%;
     background-color: #7745b7;
 }
-#footer p {
+.footer p {
     font-size: smaller;
     font-weight: bolder;
     text-align: center;
     color: #eaeaea;
 }
-#footer p a{
+.footer p a{
     text-decoration: none;
     color: #eaeaea;
 }
@@ -172,17 +172,18 @@ h3 {
     /* Tablet Carousel */
     
     /* Tablet Footer */
-    #footer {
+    .footer {
         position:fixed;
         bottom:0;
         width:100%;
         background-color: #7745b7;
+        padding: 1rem;
     }
-    #footer p {
+    .footer p {
         text-align: center;
         color: #eaeaea;
     }
-    #footer p a{
+    .footer p a{
         text-decoration: none;
         color: #eaeaea;
     }
