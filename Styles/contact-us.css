@@ -89,7 +89,7 @@ a {
         margin-right: 9rem;
     }
     .contact_container{
-         height: 100vh;
+         height: 33rem;
     }
 }
 /* contact-us container */
@@ -99,7 +99,7 @@ a {
 .contact_container{
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
     
     font-family: sans-serif;    
 }
