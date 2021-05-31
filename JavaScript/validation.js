@@ -40,7 +40,7 @@ function validated(){
         password2.focus();
      }
          if(password.value == password2.value && emailRegex.test(email.value)){
-        window.location.assign('https://freecodecamp.org/');
+        window.location.assign('../Pages/home.html');
     }
 }
 
