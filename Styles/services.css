@@ -227,9 +227,10 @@ transition: 100ms ease;
     margin-bottom:0;
     width:100%;
     background-color: #482ff7;
+    padding: 0.5rem;
 }
 .footer p {
-    font-size: smaller;
+    font-size: large;
     font-weight: bolder;
     color: #fff;
     padding: 0;
