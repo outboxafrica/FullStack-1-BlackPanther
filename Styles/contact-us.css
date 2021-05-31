@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 /* basic styles */
 li {
@@ -23,30 +24,28 @@ a {
 }
 /* MENU - ITEMS - LINKS - LOGO */
 .nav-menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 0.2rem;
+    }
+    .logo-item{
+        width: 8rem;
 
-.nav-item {
-    margin-left: 1rem;
-}
-
-.nav-link{
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: #475569;
-}
-
-.nav-link:hover{
-    color: #482ff7;
-}
-
-.nav-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #482ff7;
-}
+    }
+    .nav-item {
+        margin-left: 0.4rem;
+    }
+    
+    .nav-link{
+        font-size: 0.5rem;
+        font-weight: 400;
+        color: #BD6FE9;
+    }
+    
+    .nav-link:hover{
+        color: #482ff7;
+    }
 /* navbar media query */
 @media only screen and (min-width: 40rem) {
     .navbar {
@@ -54,13 +53,20 @@ a {
         padding: 1rem 1.5rem;
     }
     .nav-item {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .nav-link{
         font-size: 1rem;
         font-weight: 400;
-        color: #475569;
+        color: #BD6FE9;
+    }
+    .nav-menu{
+        margin-left: 3rem;
+    }
+    .logo-item{
+
+        margin-right: 6rem;
     }
 }
 @media only screen and (min-width: 60rem) {
@@ -68,13 +74,22 @@ a {
         padding: 1rem 1.5rem;
     }
     .nav-item {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .nav-link{
-        font-size: 1.9rem;
+        font-size: 1rem;
         font-weight: 400;
-        color: #475569;
+        color: #BD6FE9;
+    }
+    .nav-menu{
+        margin-left: 7rem;
+    }
+    .logo-item{
+        margin-right: 9rem;
+    }
+    .contact_container{
+         height: 100vh;
     }
 }
 /* contact-us container */
@@ -84,8 +99,8 @@ a {
 .contact_container{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    height: 100vh;
+    align-items: stretch;
+    
     font-family: sans-serif;    
 }
 h1{

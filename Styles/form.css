@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 } */
-body{;
-    font-family: sans-serif;
+body{
+    font-family: 'Josefin Sans', sans-serif;
     background-color: #f0f0f0;
 }
 /* basic styles */
@@ -28,17 +28,18 @@ a {
 /* MENU - ITEMS - LINKS - LOGO */
 .nav-menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 0;
 }
-
+.logo-item{
+    width: 8rem;
+}
 .nav-item {
-    margin-left: 1rem;
+    margin-left: 0.6rem;
 }
 
 .nav-link{
-    font-size: 0.9rem;
+    font-size: 0.5rem;
     font-weight: 400;
     color: #BD6FE9;
 }
@@ -53,13 +54,20 @@ a {
         padding: 1rem 1.5rem;
     }
     .nav-item {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .nav-link{
         font-size: 1rem;
         font-weight: 400;
         color: #BD6FE9;
+    }
+    .nav-menu{
+        margin-left: 3rem;
+    }
+    .logo-item{
+
+        margin-right: 6rem;
     }
 }
 @media only screen and (min-width: 60rem) {
@@ -67,13 +75,20 @@ a {
         padding: 1rem 1.5rem;
     }
     .nav-item {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .nav-link{
-        font-size: 1.9rem;
+        font-size: 1rem;
         font-weight: 400;
         color: #BD6FE9;
+    }
+    .nav-menu{
+        margin-left: 7rem;
+    }
+    .logo-item{
+
+        margin-right: 9rem;
     }
 }
 /* FORM */

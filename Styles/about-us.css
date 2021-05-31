@@ -6,7 +6,7 @@
 }
 html, body {
     height: 100%;
-    font-family: sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
 /* 
     display: flex;
@@ -353,7 +353,8 @@ header {
         justify-content: space-around;        
     }
     .about-us-title {
-        background: #BD6FE9;
+        padding-top: 0.4rem;
+        background: #E1BDF5;
         margin-top: 0;
     }
     .about-us-card {
@@ -367,6 +368,7 @@ header {
         border-radius: 5px;
     }
     .about-us-card h3 {
+        padding-top: 0.4rem;
         text-align: center;
         font-size: 2rem;
     }
