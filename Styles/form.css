@@ -46,6 +46,9 @@ a {
 .nav-link:hover{
     color: #482ff7;
 }
+.logo {
+   display:none;
+}
 /* navbar media query */
 @media only screen and (min-width: 40rem) {
     .navbar {
@@ -61,6 +64,10 @@ a {
         font-weight: 400;
         color: #BD6FE9;
     }
+    .logo {
+        display: flex;
+        width: 12rem;
+    }
 }
 @media only screen and (min-width: 60rem) {
     .navbar {
@@ -74,6 +81,9 @@ a {
         font-size: 1.9rem;
         font-weight: 400;
         color: #BD6FE9;
+    }
+    .logo {
+        width: 12rem;
     }
 }
 /* FORM */
