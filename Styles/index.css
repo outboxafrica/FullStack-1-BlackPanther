@@ -28,6 +28,8 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+    background-color: #EFE3F5;
+    height:4rem;
 }
 
 /* MENU - ITEMS - LINKS - LOGO */
@@ -42,28 +44,27 @@ a {
 }
 
 .nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #475569;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #BD6FE9;
+    padding: 0.4rem;
+    border-radius: 8px;
 }
-
 .nav-link:hover{
-    color: #482ff7;
+    font-size: 1.25rem;
+    background-color:#ab55dd;;
+  
 }
 
-.nav-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #482ff7;
-}
 .nav-logo-img {
-    display: none;
+    width: 10rem;
 }
 /*Mobile Hero */
 .hero-container {
     display: flex;
     flex-direction: column;
-    /* height: 100vmax; */
+    height: 100vh;
 }
 .hero-image {
     width: 100%;
@@ -74,11 +75,11 @@ a {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    background: linear-gradient( #9198e5, #fff);
+    background: linear-gradient( #EFE3F5, #f6edfaf1);
     height: 100%;
 }
 .hero-content h1 {
-    color: #fff;
+    color: #BD6FE9;
     text-align: center;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -97,18 +98,22 @@ button {
     width: 10rem;
     margin: 0 auto;
     padding: 0.6rem;
-    background-color: #482ff7;
+    background-color: #BD6FE9;
     border-radius: 0.4rem;
     border-style: none;
+  
 }
 button a {
     text-decoration: none;
     color: #ffff;
-    font-size: larger;
+    font-size: 1.2rem;
     font-weight: bolder;
+  
 }
 button:hover{
-    font-size: x-large;
+    width: 11rem;
+    font-size: 1.4rem;
+    background-color:#ab55dd;
     transition: 1000ms ease;
 }
 /* Mobile Footer */
@@ -130,30 +135,37 @@ button:hover{
 }
 /* MEDIA QUERY */
 @media only screen and (min-width: 40rem) {
-    .nav-link{
-        font-size: 1.9rem;
-        font-weight: 400;
-        color: #475569;
-    }
+   .navbar{
+       height: 6rem;
+   }
     .nav-item {
         margin-left: 4rem;
     }
-    .nav-logo {
-        display: none;
+    
+    .nav-link{
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #ffffff;
+        background-color: #BD6FE9;
+        padding: 0.45rem;
+        border-radius: 6px;
     }
+    .nav-link:hover{
+        font-size: 1.25rem;
+        background-color:#ab55dd;;
+      
+    }
+    
     .nav-logo-img {
-        display: flex;
-        width: 12rem;
+        width: 20rem;
     }
     /* Tablet  Hero*/
-    .hero-container {
-        margin: 0rem 2rem 2rem 2rem;
-        padding: 0rem 2rem 2rem 2rem;
-    }
+ 
     .hero-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0rem 5rem 1rem 5rem;
     }
     /* Tablet Hero button */
     button {
@@ -162,31 +174,44 @@ button:hover{
     }
 }
 @media only screen and (min-width: 64rem) {
-    .nav-link{
-        font-size: 1.9rem;
-        font-weight: 400;
-        color: #475569;
+   
+    .navbar{
+        height: 5rem;
     }
-    .nav-item {
-        margin-left: 5rem;
-    }
-    .nav-logo-img {
-        width: 20rem;
-    }
-    /* Desktop  Hero*/
-    .hero-container {}
-    .hero-content {
-        font-size: larger;
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-    }
-    .hero-image {
-        order: 2;
-        width: 100%;
-        height: 70%;
-        border-radius: 1rem;
-        margin: auto 0;
-    }
+     .nav-item {
+         margin-left: 4rem;
+     }
+     
+     .nav-link{
+         font-size: 1.2rem;
+         font-weight: 700;
+         color: #ffffff;
+         background-color: #BD6FE9;
+         padding: 0.45rem;
+         border-radius: 6px;
+     }
+     .nav-link:hover{
+         font-size: 1.25rem;
+         background-color:#ab55dd;;
+       
+     }
+     
+     .nav-logo-img {
+         width: 20rem;
+     }
+     /* desktop Hero*/
+  
+     .hero-content {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         padding: 0rem 9rem 1rem 9rem;
+     }
+     /* desktop Hero button */
+     button {
+         margin-top: 1rem; 
+         margin-bottom: 1rem;      
+     }
+    
     
 }
