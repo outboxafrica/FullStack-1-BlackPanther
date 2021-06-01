@@ -3,12 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-<<<<<<< HEAD
 
 body {
-=======
-body{
->>>>>>> landing-page
     font-family: 'Josefin Sans', sans-serif;
 }
 /* general menu styles */
@@ -46,13 +42,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
     background: #E1BDF5;
-=======
-    padding: 1rem 1.5rem;
-    background-color: #EFE3F5;
-    height:4rem;
->>>>>>> 173355c4bee3b385f5a7b2052a940a4b9000ee53
 }
 .logo-item {
     width: 7rem;
@@ -64,33 +54,9 @@ header {
     align-items: center;
     list-style-type: none;
 }
-<<<<<<< HEAD
 .menu li a{
     display: block;
     padding: 15px 5px;
-=======
-
-.nav-item {
-    margin-left: 1.5rem;
-}
-
-.nav-link{
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #ffffff;
-    background-color: #BD6FE9;
-    padding: 0.4rem;
-    border-radius: 8px;
-}
-.nav-link:hover{
-    font-size: 1.25rem;
-    background-color:#ab55dd;;
-  
-}
-
-.nav-logo-img {
-    width: 10rem;
->>>>>>> 173355c4bee3b385f5a7b2052a940a4b9000ee53
 }
 /*Mobile Hero */
 .hero-container {
@@ -138,48 +104,18 @@ button {
 button a {
     text-decoration: none;
     color: #ffff;
-<<<<<<< HEAD
-    font-size: 1rem;
-=======
     font-size: 1.2rem;
->>>>>>> 173355c4bee3b385f5a7b2052a940a4b9000ee53
     font-weight: bolder;
   
 }
-<<<<<<< HEAD
-button a:hover{
-    font-size: 1.3rem;
-=======
 button:hover{
     width: 11rem;
     font-size: 1.4rem;
     background-color:#ab55dd;
->>>>>>> 173355c4bee3b385f5a7b2052a940a4b9000ee53
     transition: 1000ms ease;
 }
-<<<<<<< HEAD
-/* Mobile Footer */
-.footer {
-    display: flex;
-    justify-content: center;
-    margin-bottom:0;
-    width:100%;
-    padding: 0.5rem;
-    background-color: #482ff7;
-}
-.footer p {
-    font-size: large;
-    font-weight: bolder;
-    color: #fff;
-}
-.footer a {
-    color: #fff;
-}
-=======
->>>>>>> landing-page
 /* MEDIA QUERY */
 @media only screen and (min-width: 40rem) {
-<<<<<<< HEAD
     header {
         display: flex;
         justify-content: space-between;
@@ -215,31 +151,6 @@ button:hover{
     }
     .toggle {
         display: none;
-=======
-   .navbar{
-       height: 6rem;
-   }
-    .nav-item {
-        margin-left: 4rem;
-    }
-    
-    .nav-link{
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: #ffffff;
-        background-color: #BD6FE9;
-        padding: 0.45rem;
-        border-radius: 6px;
-    }
-    .nav-link:hover{
-        font-size: 1.25rem;
-        background-color:#ab55dd;;
-      
-    }
-    
-    .nav-logo-img {
-        width: 20rem;
->>>>>>> 173355c4bee3b385f5a7b2052a940a4b9000ee53
     }
     /* Tablet  Hero*/
  
@@ -255,7 +166,6 @@ button:hover{
         margin-bottom: 1rem;      
     }
 }
-<<<<<<< HEAD
 @media only screen and (min-width: 65rem) {
     header {
         display: flex;
@@ -346,47 +256,4 @@ button:hover{
 .footer a {
     color: #fff;
     text-decoration: none;
-=======
-@media only screen and (min-width: 64rem) {
-   
-    .navbar{
-        height: 5rem;
-    }
-     .nav-item {
-         margin-left: 4rem;
-     }
-     
-     .nav-link{
-         font-size: 1.2rem;
-         font-weight: 700;
-         color: #ffffff;
-         background-color: #BD6FE9;
-         padding: 0.45rem;
-         border-radius: 6px;
-     }
-     .nav-link:hover{
-         font-size: 1.25rem;
-         background-color:#ab55dd;;
-       
-     }
-     
-     .nav-logo-img {
-         width: 20rem;
-     }
-     /* desktop Hero*/
-  
-     .hero-content {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         padding: 0rem 9rem 1rem 9rem;
-     }
-     /* desktop Hero button */
-     button {
-         margin-top: 1rem; 
-         margin-bottom: 1rem;      
-     }
-    
-    
->>>>>>> 173355c4bee3b385f5a7b2052a940a4b9000ee53
 }
