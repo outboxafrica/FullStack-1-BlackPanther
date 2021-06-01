@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../Styles/form.css">
+</head>
+<body> 
+    <header>
+        <!--logo image-->
+        <img class="logo-item" src="../Images/Screenshot from 2021-05-23 14-38-51.png" alt="baby and me logo">
+        <!--navigation bar-->
+    <nav>
+        <ul class="menu">
+            <!--logo image-->
+        <img class="logo-item-toggle" src="../Images/Screenshot from 2021-05-23 14-38-51.png" alt="baby and me logo">
+            <!--menu links-->
+            <li class="item"><a href="../Pages/services.html">SERVICES</a></li>
+            <li class="item"><a href="../Pages/home.html">HOME</a></li>
+            <!--nav logout button-->
+            <li class="item button"><a href="#">Log Out</a></li>
+            <!-- responsive js hamburger menu for mobile -->
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+</header>
+    <form action=""> 
+        <h1>CONSULTATION FORM</h1>
+        <h4>Child's mother</h4>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" class="form_input">
+        <br>
+        <label for="date">Email:</label>
+        <input type="email" name="email" id="" class="form_input">
+        <br>
+        <label for="date">Date:</label>
+        <input type="date" name="date" class="form_input-2" id="">
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" class="form_input-2" id="">
+        <br>
+        <label for="Tel">Tel:</label>
+        <input type="tel" name="tel" id="" class="form_input">
+
+        <h4>Medical History</h4>
+        <p>Please list any injuries, alergies, past injuries or other medical information .</p>
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+        <h4>Pregnancy History</h4>
+        <div class="arrange">
+            <p>How many months is the baby?</p>
+            <input type="text" name="text" class="form_input-3">
+         </div>
+         <div class="arrange">
+        <p>How many times have you been pregnanat? <br> 
+            (Counting this Pregnancy)</p>
+            <input type="text" class="form_input-3">
+         </div>
+         
+       <h3> Have you had any of the following?</h3>
+        <ol>
+            <div class="arrange">
+                <li>Mentally handicapped?</li> 
+                <input type="checkbox">
+             </div>
+             <br>
+          <div class="arrange">
+                <li>Had a child with birth defects?</li> 
+                <input type="checkbox">
+          </div>
+          <br>
+          <div class="arrange">
+                <li> Cystic Fibrosis?</li>
+                <input type="checkbox" >
+        </div>
+         </ol>
+
+         </div>
+        <p>Are there any diseases that “run” in your family?
+            <br>
+            if “yes” please explain:
+        </p>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+   <button>Submit</button>
+    </form>
+    <div class="footer">
+        <p>Copyright 2021 <a href="https://outbox.co.ug/" target="_blank" title="Outbox Uganda">Oubox EDU</a> Team Black Panther</p>
+    </div> 
+    <!-- navabr toggle js -->
+    <script src="/JavaScript/navbar.js"></script>
+</body>
+</html>

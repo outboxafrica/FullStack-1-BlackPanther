@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <!-- FONTAWESOME HAMBRUGER MENU LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Styles/services.css">
+</head>
+<body>
+    <header>
+        <!--logo image-->
+        <img class="logo-item" src="../Images/Screenshot from 2021-05-23 14-38-51.png" alt="baby and me logo">
+        <!--navigation bar-->
+    <nav>
+        <ul class="menu">
+            <!--logo image-->
+        <img class="logo-item-toggle" src="../Images/Screenshot from 2021-05-23 14-38-51.png" alt="baby and me logo">
+            <!--menu links-->
+            <li class="item"><a href="../Pages/services.html" class="active">SERVICES</a></li>
+            <li class="item"><a href="../Pages/home.html">HOME</a></li>
+            <li class="item"><a href="../Pages/about-Us.html">ABOUT US</a></li>
+            <li class="item"><a href="../Pages/contact-us.html">CONTACT US</a></li>
+            <!--nav logout button-->
+            <li class="item button"><a href="#">Log Out</a></li>
+            <!-- responsive js hamburger menu for mobile -->
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="services_container"> 
+        <h1>Our Services</h1>
+        <div class="container">
+        <div class="services_inner_container">
+            <div class="content">
+            <p><b>Have no time or energy to go to the clinic for a check up?</b></p>
+            <p>Book an online consultation with our medical professionals now!</p>
+            <p id="Paragraph"><i>Your health is our priority</i></p>
+            <button> <a href="../Pages/form.html" target="_blank">Online Consultation</a> </button>
+        </div>   
+            <img class="image_1" src="../Images/online-marketing-hIgeoQjS_iE-unsplash.jpg" alt="Doctor holding a Stethoscope ">
+            
+        </div> 
+        <div class="services_inner_container_2">
+            
+                <img class="image_2" src="../Images/hush-naidoo-pA0uoltkwao-unsplash.jpg" alt="A nurse taking care of a patient">
+                
+                <div class="content_2">
+                <p><b>Is life too hectic to keep track of your check-ups at the clinic or hospital? </b> </p>
+                <p>Schedule a check-ups at the best clinics nearest to you.</p>
+                <p id="Paragraph"><i>Your health is out priority</i></p>
+                <button data-popup-target="#popup">Schedule Visit</button>
+
+                <div class="popup" id="popup">
+                    <div class="popup_header">
+                        <h2 class="title">Schedule Visit</h2>
+                        <button data-close-button class="close_btn">&times;</button>
+                    </div>
+
+                    <div class="popup_body">
+                        <form action="" id="register" class="input-group">
+                            <input type="text" class="input-field " placeholder="Name" id="username" required>
+                            <input type="email" class="input-field " placeholder="Email" id="email" required>
+                            <input type="text" class="input-field" placeholder="Address" id="address" required>
+                            <input type="tel" class="input-field" placeholder="Tel" id="tel" required>
+                            <input type="button" value= "Submit" onclick="myfun()">
+                    </div>
+
+
+                </div>
+
+                <div  id="overlay"></div>
+
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright 2021 <a href="https://outbox.co.ug/" target="_blank" title="Outbox Uganda">Oubox EDU</a> Team Black Panther</p>
+        </div> 
+    <script src="../JavaScript/services.js"></script>
+    <script src="/JavaScript/navbar.js"></script>
+
+</body>
+</html>
