@@ -172,7 +172,7 @@ h1{
 }
 
 .content{
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
     padding: 5rem 6rem;
 
@@ -182,7 +182,7 @@ a{
     color:#ffff;
 }
 .content_2{
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
     padding: 5rem 6rem;
 
@@ -196,7 +196,7 @@ p{
     
 }
 button{
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #ffff;
     background-color: #BD6FE9;
     padding: 0.5rem;
@@ -207,7 +207,7 @@ button{
 }
 button:hover{
     background-color: #ab55dd;
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: 100ms ease;
 }
 .image_1{

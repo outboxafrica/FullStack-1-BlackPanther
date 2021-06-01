@@ -1,20 +1,116 @@
 *{
     margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* basic styles */
+li {
+    list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+/* header/navbar */
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    background: #E1BDF5;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* padding: 1rem 1.5rem; */
+}
+/* MENU - ITEMS - LINKS - LOGO */
+.nav-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 0.2rem;
+    }
+    .logo-item{
+        width: 8rem;
+
+    }
+    .nav-item {
+        margin-left: 0.4rem;
+    }
+    
+    .nav-link{
+        font-size: 0.5rem;
+        font-weight: 400;
+        color: #BD6FE9;
+    }
+    
+    .nav-link:hover{
+        color: #482ff7;
+    }
+/* navbar media query */
+@media only screen and (min-width: 40rem) {
+    .navbar {
+        justify-content: center;
+        padding: 1rem 1.5rem;
+    }
+    .nav-item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .nav-link{
+        font-size: 1rem;
+        font-weight: 400;
+        color: #BD6FE9;
+    }
+    .nav-menu{
+        margin-left: 3rem;
+    }
+    .logo-item{
+
+        margin-right: 6rem;
+    }
+}
+@media only screen and (min-width: 60rem) {
+    .navbar {
+        padding: 1rem 1.5rem;
+    }
+    .nav-item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .nav-link{
+        font-size: 1rem;
+        font-weight: 400;
+        color: #BD6FE9;
+    }
+    .nav-menu{
+        margin-left: 7rem;
+    }
+    .logo-item{
+        margin-right: 9rem;
+    }
+    .contact_container{
+         height: 33rem;
+    }
+}
+/* contact-us container */
+.container{
+    background-color: #E1BDF5;
+}
 .contact_container{
     display: flex;
     justify-content: space-around;
-    background-color: #E1BDF5;
-    font-family: sans-serif;
+    align-items: center;
     
+    font-family: sans-serif;    
 }
 h1{
     
     padding-top: 1.4rem;
 
 }
-
+#send_message{
+    padding-top: 0.7rem;
+}
 input{
     margin-top:1rem ;
     padding: 0.5rem 1rem ;
@@ -41,9 +137,7 @@ button{
     border-style: none;
     margin-top: 0.4rem ;
     margin-bottom: 0.5rem;
-    outline-style: none;
-
-    
+    outline-style: none;    
 }
 button:hover{
     background-color: #ab55dd;
@@ -59,14 +153,6 @@ img{
 span{
     margin-right: 0.6rem;
 } 
-footer{
-    font-family: sans-serif;
-    background-color:#7745B7;
-    color: #ffff;
-    text-align: center;
-    font-weight: 800;
-    padding: 0.2rem;
-}
 
 /* media Query */
 @media only screen and (max-width: 600px){
@@ -98,4 +184,21 @@ aside{
     margin-bottom: 1rem;
     margin-left: 1rem;
 }
+}
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom:0;
+    width:100%;
+    background-color: #482ff7;
+    padding: 0.5rem;
+}
+.footer p {
+    font-size: large;
+    font-weight: bolder;
+    color: #fff;
+}
+.footer a {
+    color: #fff;
 }

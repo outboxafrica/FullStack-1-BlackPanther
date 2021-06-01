@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .hero{
     height: 100%;
@@ -80,10 +80,11 @@ img{
     border-color: #2ecc71;
 
 }
-.input-field.error {
+.error {
     border-color: #e74c3c;
 
 }
+
 .submit-btn{
     width: 85%;
     padding: 10px 30px;
@@ -101,4 +102,11 @@ img{
 }
 #register{
     left: 400px;
+}
+
+.error-message{
+    display:none;
+    font-size: 0.6rem;
+    color: #e74c3c;
+    padding: 0;
 }
