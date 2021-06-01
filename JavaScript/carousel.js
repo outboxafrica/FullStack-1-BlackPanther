@@ -4,7 +4,7 @@ const arrowRight = document.querySelector('.arrow-right');
 const imgCarousel = document.querySelector('.carousel-img');
 const indicators = document.querySelectorAll('.indicators > span');
 // images variable holds the relative paths of our images
-const images = ['/Images/liv-bruce-M0oVPGsWk1E-unsplash.jpg', '/Images/pexels-george-jr-kamau-2781219.jpg', '/Images/mateus-campos-felipe-o6h1TJOlkw0-unsplash.jpg'];
+const images = ['../Images/liv-bruce-M0oVPGsWk1E-unsplash.jpg', '../Images/pexels-george-jr-kamau-2781219.jpg', '../Images/mateus-campos-felipe-o6h1TJOlkw0-unsplash.jpg'];
 // helper functions
 // 1-setting and getting respectively the attribute of the element we want
 const setAttr = (el, attr, value) => el.setAttribute(attr, value);
@@ -34,7 +34,7 @@ const activateIndicator = (index) => {
 };
 // used for sliding functionality of our carousel
 // returns the interval that we're gonna use inside our click events
-const intervalSlider = (direction, delay = 3000) => {
+const intervalSlider = (direction, delay = 1500) => {
     let callback = null, getNewIndexFunc = null;
     // function calculates the image index when clicking left or right arrow
     if (direction === 'left') {

@@ -189,7 +189,7 @@ h3 {
     }
 }
 /* Desktop Menu */
-@media all and (min-width: 60rem) {
+@media all and (min-width: 65rem) {
     header {
         display: flex;
         justify-content: space-between;
@@ -232,13 +232,13 @@ h3 {
     .hero-text {
         text-align: center;
         z-index: 9;
-        color: #fff;
+        color: #7745b7;
         font-size: 3rem;
         font-weight: bolder;
     }
     h3 {
         font-size: 3rem;
-        color: #fff;
+        color: #BD6FE9;
         font-style: italic;
     }
     .hero-logo-item {
