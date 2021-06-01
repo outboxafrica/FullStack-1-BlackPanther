@@ -37,7 +37,6 @@ a {
 }
 .item.button {
     font-weight: bolder;
-    padding: 8px 4px;
 }
 .item a:hover,
 .item a:hover::after {
@@ -64,7 +63,7 @@ header {
     align-items: center;
     list-style-type: none;
 }
-.menu li a{
+.menu.item a{
     display: block;
     padding: 15px 5px;
 }
