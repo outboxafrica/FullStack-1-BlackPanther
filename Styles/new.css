@@ -1,14 +1,18 @@
-*{
-    padding:0;
-    margin: 0;
+/* Basic styling */
+* {
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+    padding: 0;
+    margin: 0;
 }
-/* general menu styles */
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 16px;
+}
 nav {
     padding: 0 15px;
 }
-.item a {
+a {
     color: #000;
     text-decoration: none;
 }
@@ -45,10 +49,6 @@ header {
 .logo-item {
     display: none;
 }
-.logo-item-toggle {
-    width: 7rem;
-    margin-right: 15rem;
-}
 .menu {   
     display: flex;
     flex-wrap: wrap;
@@ -81,7 +81,7 @@ header {
     display: flex;
     flex-direction: column;
     background: linear-gradient(#E1BDF5, #9198e5);
-    height: 100vh;
+    height: 100%;
 }
 .hero-logo-item {
     width: 100%;
@@ -97,15 +97,29 @@ h3 {
 .carousel {
     display: none;
 }
-/* Tablet Menu Media Query */
-@media all and (min-width: 4rem) {
+/* Mobile Footer */
+.footer {
+    /* position:absolute; */
+    bottom:0;
+    width:100%;
+    background-color: #7745b7;
+}
+.footer p {
+    font-size: smaller;
+    font-weight: bolder;
+    text-align: center;
+    color: #eaeaea;
+}
+.footer p a{
+    text-decoration: none;
+    color: #eaeaea;
+}
+/* Tablet Menu */
+@media all and (min-width: 40rem) {
     header {
         display: flex;
         justify-content: space-between;
         height: 5rem;
-    }
-    .logo-item-toggle {
-        display: none;
     }
     .logo-item {
         display: flex;
@@ -155,16 +169,31 @@ h3 {
     .hero-logo-item {
         display: none;
     }
+    /* Tablet Carousel */
+    
+    /* Tablet Footer */
+    .footer {
+        position:fixed;
+        bottom:0;
+        width:100%;
+        background-color: #7745b7;
+        padding: 1rem;
+    }
+    .footer p {
+        text-align: center;
+        color: #eaeaea;
+    }
+    .footer p a{
+        text-decoration: none;
+        color: #eaeaea;
+    }
 }
-/* Desktop Menu Media Query */
-@media all and (min-width: 65rem) {
+/* Desktop Menu */
+@media all and (min-width: 60rem) {
     header {
         display: flex;
         justify-content: space-between;
         height: 5rem;
-    }
-    .logo-item-toggle {
-        display: none;
     }
     .logo-item {
         width: 20rem;
@@ -203,7 +232,7 @@ h3 {
     .hero-text {
         text-align: center;
         z-index: 9;
-        color: #7745B7;
+        color: #fff;
         font-size: 3rem;
         font-weight: bolder;
     }
@@ -216,7 +245,7 @@ h3 {
         display: none;
     }
     /* Desktop Carousel */
-    .arrow {
+.arrow {
     font-size: 51px;
     font-weight: bold;
     border-radius: 50%;
@@ -281,21 +310,4 @@ h3 {
   .indicators>span.active {
     background: #9198e5;
   }
-}
-/* Footer */
-.footer {
-    display: flex;
-    justify-content: center;
-    margin-bottom:0;
-    width:100%;
-    background-color: #482ff7;
-}
-.footer p {
-    font-size: large;
-    font-weight: bolder;
-    color: #fff;
-    padding: 0.5rem;
-}
-.footer a {
-    color: #fff;
 }
