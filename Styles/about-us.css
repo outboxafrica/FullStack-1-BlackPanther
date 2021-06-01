@@ -37,15 +37,12 @@ a {
 }
 .item.button {
     font-weight: bolder;
-    padding: 8px 4px;
 }
 .item a:hover,
 .item a:hover::after {
     color: #BD6FE9;
 }
-.item.button {
-    
-}
+
 .item a.active { 
     color: #7745B7;
     font-weight: bolder;
@@ -66,7 +63,7 @@ header {
     align-items: center;
     list-style-type: none;
 }
-.menu li a{
+.menu.item a{
     display: block;
     padding: 15px 5px;
 }
@@ -95,14 +92,14 @@ header {
 .about-us-title {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     background: #EFE3F5;
     width: 100%;
-    padding: 1rem;
+    padding: 1.2rem;
 }
 .about-us-card h2 {
-    text-align: justify;
-    font-size: 1.75rem;
+    text-align: center;
+    font-size: 1.4rem;
 }
 .about-us-cards {
     display: flex;
@@ -126,11 +123,13 @@ header {
 }
 .about-us-card h3 {
     text-align: center;
-    font-size: 1.45rem;
+    font-size: 1.35rem;
+    padding: 1rem;
 }
 .about-us-card p {
     text-align: justify;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+      padding: 0.4rem;
 }
 /* Mobile team logos */
 #team-profile {
@@ -139,13 +138,14 @@ header {
     padding: 0;
 }
 .team_profile-title {
-    padding: 1rem;
+    padding: 1.2rem;
     text-align: center;
-    font-size: 1.45rem;
+    font-size: 1.3rem;
 }
 .team_profile-title h3 {
     color: #7745b7;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    padding: 0.6rem;
 }
 .team_profile-logos {
     display: flex;
@@ -168,11 +168,13 @@ header {
 }
 .sponsors-title {
     text-align: center;
-    font-size: 1.45rem;
+    font-size: 1.3rem;
+    padding: 1rem;
 }
 .sponsors-title h3 {
     color: #fff;
     font-size: 1.2rem;
+    padding: 1rem;
 }
 .sponsors-logos {
     display: flex;
@@ -268,12 +270,10 @@ header {
         
     }
     .about-us-card h2 {
-        text-align: left;
+        text-align: center;
         font-size: 1.625rem;
     }
-    .about-us-card img {
-        /* width: 100%; */
-    }
+   
     .about-us-card p {
         text-align: justify;
         font-size: 1.3rem;
@@ -282,6 +282,7 @@ header {
     .team_profile-logos {
         display: flex;
         flex-wrap: wrap;
+        padding-bottom: 0.6rem;
     }
     .profile-logo {
         flex: 0 1 calc(30% - 1em);
@@ -355,7 +356,7 @@ header {
         justify-content: space-around;        
     }
     .about-us-title {
-        padding-top: 0.4rem;
+        padding-top: 0.7rem;
         background: #E1BDF5;
         margin-top: 0;
     }
@@ -370,9 +371,9 @@ header {
         border-radius: 5px;
     }
     .about-us-card h3 {
-        padding-top: 0.4rem;
+        padding-top: 0.7rem;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .about-us-card p {
         text-align: justify;

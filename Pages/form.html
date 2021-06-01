@@ -5,30 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- css -->
     <link rel="stylesheet" href="../Styles/form.css">
 </head>
 <body> 
-    <header class="header">
-       
-        <nav class="navbar">
-            <img class="logo-item" src="/Images/Screenshot from 2021-05-23 14-38-51.png" alt="baby and me logo">
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <img class="logo" src="../Images/Screenshot from 2021-05-23 14-38-51.png" alt="baby and me logo" >
-                </li>
-                <li class="nav-item">
-                    <a href="../Pages/home.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../Pages/services.html" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../Pages/login.html" class="nav-link">Log Out</a>
-                </li>
-            </ul>
-        </nav>
+    <header>
+        <!--logo image-->
+        <img class="logo-item" src="../Images/Screenshot from 2021-05-23 14-38-51.png" alt="baby and me logo">
+        <!--navigation bar-->
+    <nav>
+        <ul class="menu">
+            <!--logo image-->
+        <img class="logo-item-toggle" src="../Images/Screenshot from 2021-05-23 14-38-51.png" alt="baby and me logo">
+            <!--menu links-->
+            <li class="item"><a href="../Pages/services.html">SERVICES</a></li>
+            <li class="item"><a href="../Pages/home.html">HOME</a></li>
+            <!--nav logout button-->
+            <li class="item button"><a href="#">Log Out</a></li>
+            <!-- responsive js hamburger menu for mobile -->
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
 </header>
     <form action=""> 
         <h1>CONSULTATION FORM</h1>
@@ -94,5 +95,7 @@
     <div class="footer">
         <p>Copyright 2021 <a href="https://outbox.co.ug/" target="_blank" title="Outbox Uganda">Oubox EDU</a> Team Black Panther</p>
     </div> 
+    <!-- navabr toggle js -->
+    <script src="/JavaScript/navbar.js"></script>
 </body>
 </html>

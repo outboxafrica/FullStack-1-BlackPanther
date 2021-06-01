@@ -4,39 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Services</title>
+    <!-- FONTAWESOME HAMBRUGER MENU LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="../Styles/services.css">
 </head>
 <body>
-    <header class="header">
-        
-        <nav class="navbar">
-            
-            <img class="logo-item" src="/Images/Screenshot from 2021-05-23 14-38-51.png" alt="baby and me logo">
-            
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <img class="logo" src="../Images/Screenshot from 2021-05-23 14-38-51.png" alt="baby and me logo" >
-                </li>
-                <li class="nav-item">
-                    <a href="/Pages/services.html" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../Pages/home.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../Pages/about-us" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../Pages/contact-us.html" class="nav-link">Contact-us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../Pages/login.html" class="nav-link">Log Out</a>
-                </li>
-            </ul>
-        </nav>
+    <header>
+        <!--logo image-->
+        <img class="logo-item" src="../Images/Screenshot from 2021-05-23 14-38-51.png" alt="baby and me logo">
+        <!--navigation bar-->
+    <nav>
+        <ul class="menu">
+            <!--logo image-->
+        <img class="logo-item-toggle" src="../Images/Screenshot from 2021-05-23 14-38-51.png" alt="baby and me logo">
+            <!--menu links-->
+            <li class="item"><a href="../Pages/services.html" class="active">SERVICES</a></li>
+            <li class="item"><a href="../Pages/home.html">HOME</a></li>
+            <li class="item"><a href="../Pages/about-Us.html">ABOUT US</a></li>
+            <li class="item"><a href="../Pages/contact-us.html">CONTACT US</a></li>
+            <!--nav logout button-->
+            <li class="item button"><a href="#">Log Out</a></li>
+            <!-- responsive js hamburger menu for mobile -->
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
 </header>
     <div class="services_container"> 
         <h1>Our Services</h1>
@@ -89,6 +84,7 @@
             <p>Copyright 2021 <a href="https://outbox.co.ug/" target="_blank" title="Outbox Uganda">Oubox EDU</a> Team Black Panther</p>
         </div> 
     <script src="../JavaScript/services.js"></script>
+    <script src="/JavaScript/navbar.js"></script>
 
 </body>
 </html>
