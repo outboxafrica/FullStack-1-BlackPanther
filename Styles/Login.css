@@ -110,3 +110,9 @@ img{
     color: #e74c3c;
     padding: 0;
 }
+/* media query */
+@media only screen and (max-width: 600px){
+    .form-box{
+        margin: 10rem auto;
+    }
+}
