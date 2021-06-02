@@ -15,6 +15,10 @@ html, body {
 header {
     background: #EFE3F5;
     margin: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
 }
 nav {
     /* background: #E1BDF5; */
@@ -53,7 +57,10 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.logo-item {
+.logo-item-toggle {
+  width: 10rem;
+}
+.logo-item{
     display: none;
 }
 .menu {   
@@ -108,7 +115,7 @@ header {
     justify-content: space-between; 
 }
 .mobile-logo-item {
-    width: 100%;
+    display: none;
 }
 .about-us-card {
     padding: 1rem;
@@ -224,6 +231,10 @@ header {
         display: flex;
         justify-content: space-between;
         height: 5rem;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        opacity: 0.8;
     }
     .logo-item {
         display: flex;
@@ -231,7 +242,7 @@ header {
         height: 7rem;
         padding-bottom: 1.25rem;
     }
-    .mobile-logo-item {
+    .logo-item-toggle {
         display: none;
     }
     .menu {
@@ -319,16 +330,22 @@ header {
 
 @media screen and (min-width: 60em) {
     /* Desktop Menu */
+
     header {
         display: flex;
         justify-content: space-between;
         height: 5rem;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        opacity: 0.8;
     }
     .logo-item {
         width: 20rem;
         height: 7rem;
         padding-bottom: 1.25rem;
     }
+    
     .menu {
         flex-wrap: nowrap;
         background: none;
@@ -339,6 +356,7 @@ header {
         display: block;
         width: auto;
         padding-top: 1.25rem;
+
     }
     .button {
         order: 2;
@@ -347,6 +365,9 @@ header {
         font-size: large;
         }
     .toggle {
+        display: none;
+    }
+    .logo-item-toggle{
         display: none;
     }
     /* Desktop about-us cards */

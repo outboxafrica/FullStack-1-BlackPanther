@@ -45,6 +45,10 @@ header {
     justify-content: space-between;
     align-items: center;
     background: #E1BDF5;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
 }
 .logo-item {
     display: none;
@@ -105,7 +109,7 @@ h3 {
     background-color: #7745b7;
 }
 .footer p {
-    font-size: smaller;
+    font-size: 1rem;
     font-weight: bolder;
     text-align: center;
     color: #eaeaea;

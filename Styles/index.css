@@ -21,6 +21,10 @@ a {
 /* HEADER & NAVBAR */
 .header{
     border-bottom: 1px solid #E2E8F0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
 }
 
 .navbar {

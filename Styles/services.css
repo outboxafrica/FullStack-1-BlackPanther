@@ -41,13 +41,16 @@ header {
     justify-content: space-between;
     align-items: center;
     background: #E1BDF5;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
 }
 .logo-item {
     display: none;
 }
 .logo-item-toggle {
     width: 7rem;
-    margin-right: 15rem;
 }
 .menu {   
     display: flex;
@@ -330,7 +333,11 @@ transition: 100ms ease;
     opacity: 0.6;
 
 }
+h1{
+    padding: 1rem;
+}
 .content{
+    padding-top: 2.5rem;
     position: relative;
     color: #000000;  
     font-size: 1rem;
@@ -382,10 +389,10 @@ p{
     background-color: #482ff7;
 }
 .footer p {
-    font-size: large;
+    font-size: 1rem;
     font-weight: bolder;
     color: #fff;
-    padding: 0.5rem;
+    padding: 0.4rem;
 }
 .footer a {
     color: #fff;
